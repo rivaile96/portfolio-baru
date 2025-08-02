@@ -1,15 +1,15 @@
 # Rivai Imanudin - Personal Portfolio
 
 <p align="center">
-  <a href="https://GANTI-DENGAN-LINK-VERCEL-LU.vercel.app/" target="_blank">
-    <img src="./public/screenshot.png" alt="Project Screenshot" />
+  <a href="https://portfolio-wine-kappa-48.vercel.app/" target="_blank">
+    <img src="https://i.imgur.com/wfhVLel.png" alt="Project Screenshot" />
   </a>
 </p>
 
 <p align="center">
   <em>Website portofolio pribadi yang dibangun dengan Astro dan Tailwind CSS untuk menampilkan perjalanan profesional, keahlian, dan proyek-proyek saya di bidang IT dan Cyber Security.</em>
   <br/><br/>
-  <a href="https://portfolio-wine-kappa-48.vercel.app/="_blank"><strong>✨ Lihat Live Demo ✨</strong></a>
+  <a href="https://portfolio-wine-kappa-48.vercel.app/" target="_blank"><strong>✨ Lihat Live Demo ✨</strong></a>
 </p>
 
 ---
@@ -38,8 +38,8 @@ Jika Anda ingin menjalankan project ini di komputer Anda:
 
 1.  **Clone repository ini:**
     ```bash
-    git clone [https://github.com/rivaile96/astro-portfolio.git](https://github.com/rivaile96/astro-portfolio.git)
-    cd astro-portfolio
+    git clone [https://github.com/rivaile96/portfolio-baru.git](https://github.com/rivaile96/portfolio-baru.git)
+    cd portfolio-baru
     ```
 
 2.  **Install semua dependensi:**
@@ -53,12 +53,6 @@ Jika Anda ingin menjalankan project ini di komputer Anda:
     ```
     Buka `http://localhost:4321` di browser Anda.
 
-4.  **Build untuk produksi:**
-    ```bash
-    npm run build
-    ```
-    Hasil build akan tersedia di folder `dist/`.
-
 ## 👤 Kontak Saya
 
 Jangan ragu untuk terhubung dengan saya:
@@ -69,4 +63,3 @@ Jangan ragu untuk terhubung dengan saya:
 
 ---
 
-*This project was created as part of a collaborative session with Google's Gemini.*
