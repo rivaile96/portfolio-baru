@@ -1,43 +1,72 @@
-# Astro Starter Kit: Minimal
+# Rivai Imanudin - Personal Portfolio
 
-```sh
-npm create astro@latest -- --template minimal
-```
+<p align="center">
+  <a href="https://GANTI-DENGAN-LINK-VERCEL-LU.vercel.app/" target="_blank">
+    <img src="./public/screenshot.png" alt="Project Screenshot" />
+  </a>
+</p>
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+<p align="center">
+  <em>Website portofolio pribadi yang dibangun dengan Astro dan Tailwind CSS untuk menampilkan perjalanan profesional, keahlian, dan proyek-proyek saya di bidang IT dan Cyber Security.</em>
+  <br/><br/>
+  <a href="https://GANTI-DENGAN-LINK-VERCEL-LU.vercel.app/" target="_blank"><strong>✨ Lihat Live Demo ✨</strong></a>
+</p>
 
-## 🚀 Project Structure
+---
 
-Inside of your Astro project, you'll see the following folders and files:
+## 🚀 Teknologi yang Digunakan
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+Project ini dibangun menggunakan teknologi modern yang berfokus pada performa dan pengalaman developer:
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+* **[Astro](https://astro.build/):** Framework web statis untuk membangun website super cepat.
+* **[Tailwind CSS](https://tailwindcss.com/):** Framework CSS utility-first untuk desain yang modern dan responsif.
+* **[TypeScript](https://www.typescriptlang.org/):** Menambahkan static typing pada JavaScript untuk kode yang lebih robust.
+* **[AOS (Animate On Scroll)](https://michalsnik.github.io/aos/):** Library untuk animasi saat scroll.
+* **Vercel:** Platform untuk deployment dan hosting.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## ✨ Fitur Utama
 
-Any static assets, like images, can be placed in the `public/` directory.
+* **Desain Responsif:** Tampilan yang optimal di semua perangkat, dari desktop hingga mobile.
+* **Performa Cepat:** Dibangun sebagai Static Site (SSG), membuatnya sangat ringan dan cepat di-load.
+* **Animasi Interaktif:** Efek hover pada kartu dan animasi saat scroll untuk pengalaman yang lebih dinamis.
+* **Modal/Lightbox:** Sertifikat dapat dilihat dalam ukuran penuh tanpa meninggalkan halaman.
+* **Struktur Berbasis Komponen:** Kode yang bersih dan modular, mudah untuk dikelola dan diperbarui.
 
-## 🧞 Commands
+## 🛠️ Setup dan Jalankan Secara Lokal
 
-All commands are run from the root of the project, from a terminal:
+Jika Anda ingin menjalankan project ini di komputer Anda:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+1.  **Clone repository ini:**
+    ```bash
+    git clone [https://github.com/rivaile96/astro-portfolio.git](https://github.com/rivaile96/astro-portfolio.git)
+    cd astro-portfolio
+    ```
 
-## 👀 Want to learn more?
+2.  **Install semua dependensi:**
+    ```bash
+    npm install
+    ```
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+3.  **Jalankan development server:**
+    ```bash
+    npm run dev
+    ```
+    Buka `http://localhost:4321` di browser Anda.
+
+4.  **Build untuk produksi:**
+    ```bash
+    npm run build
+    ```
+    Hasil build akan tersedia di folder `dist/`.
+
+## 👤 Kontak Saya
+
+Jangan ragu untuk terhubung dengan saya:
+
+* **LinkedIn:** [https://www.linkedin.com/in/rivaimanudin/](https://www.linkedin.com/in/rivaimanudin/)
+* **GitHub:** [@rivaile96](https://github.com/rivaile96)
+* **Website:** [www.rivaile96.my.id](https://www.rivaile96.my.id/)
+
+---
+
+*This project was created as part of a collaborative session with Google's Gemini.*

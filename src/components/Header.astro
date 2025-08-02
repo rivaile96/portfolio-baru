@@ -1,0 +1,52 @@
+---
+// File: src/components/Header.astro
+const navLinks = [
+  { href: "#about", text: "About" },
+  { href: "#journey", text: "Journey" },
+  { href: "#skills", text: "Skills" },
+  { href: "#projects", text: "Projects" },
+  { href: "#certifications", text: "Certifications" }, // <-- LINK BARU DITAMBAHKAN DI SINI
+];
+---
+<header class="bg-background/80 backdrop-blur-md fixed top-0 left-0 right-0 z-50">
+  <div class="container mx-auto flex justify-between items-center p-4">
+    <a href="/" class="text-xl font-bold text-white hover:text-accent transition-colors">
+      Rivai Imanudin
+    </a>
+    <nav class="hidden md:flex space-x-6">
+      {navLinks.map(link => (
+        <a href={link.href} class="text-text-secondary hover:text-accent transition-colors">{link.text}</a>
+      ))}
+    </nav>
+    <a href="mailto:rifaimanudin@gmail.com" class="hidden md:inline-block bg-accent hover:bg-accent-hover text-white font-semibold py-2 px-4 rounded-md transition-colors">
+      Contact Me
+    </a>
+    <button id="menu-btn" class="md:hidden focus:outline-none">
+      <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+    </button>
+  </div>
+  <div id="menu" class="hidden md:hidden">
+    <div class="flex flex-col items-center py-4 space-y-4 bg-primary">
+      {navLinks.map(link => (
+        <a href={link.href} class="text-text-secondary hover:text-accent transition-colors">{link.text}</a>
+      ))}
+      <a href="mailto:rifaimanudin@gmail.com" class="w-1/2 text-center bg-accent hover:bg-accent-hover text-white font-semibold py-2 px-4 rounded-md transition-colors">
+        Contact Me
+      </a>
+    </div>
+  </div>
+</header>
+<script>
+  const btn = document.getElementById('menu-btn');
+  const menu = document.getElementById('menu');
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+  // Menutup menu saat link di-klik (untuk mobile)
+  const links = menu.querySelectorAll('a');
+  links.forEach(link => {
+    link.addEventListener('click', () => {
+      menu.classList.add('hidden');
+    });
+  });
+</script>

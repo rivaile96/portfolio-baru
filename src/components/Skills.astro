@@ -1,0 +1,72 @@
+---
+// File: src/components/Skills.astro (Versi Final)
+import SkillBar from './SkillBar.astro';
+import ToolCard from './ToolCard.astro';
+---
+<section id="skills" class="py-20">
+  <div class="container mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-16" data-aos="fade-up">Tools & Skills</h2>
+
+    <div class="mb-16" data-aos="fade-up" data-aos-delay="100">
+      <h3 class="text-2xl font-semibold mb-8 text-center">My Favourite Tools</h3>
+      
+      {/* Grid disesuaikan untuk 12 item */}
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+        <ToolCard name="Metasploit">
+          <img src="/tools/metasploit.png" alt="Metasploit Logo" class="w-10 h-10 object-contain"/>
+        </ToolCard>
+        <ToolCard name="Burpsuite">
+          <img src="/tools/burpsuite.png" alt="Burpsuite Logo" class="w-10 h-10 object-contain"/>
+        </ToolCard>
+        <ToolCard name="Nmap">
+          <img src="/tools/nmap.png" alt="Nmap Logo" class="w-10 h-10 object-contain"/>
+        </ToolCard>
+        <ToolCard name="Wireshark">
+          <img src="/tools/Wireshark.png" alt="Wireshark Logo" class="w-10 h-10 object-contain"/>
+        </ToolCard>
+        <ToolCard name="Python">
+          <img src="/tools/python.png" alt="Python Logo" class="w-10 h-10 object-contain"/>
+        </ToolCard>
+        <ToolCard name="PHP">
+          <img src="/tools/php.png" alt="PHP Logo" class="w-10 h-10 object-contain"/>
+        </ToolCard>
+        <ToolCard name="Laravel">
+          <img src="/tools/laravel.png" alt="Laravel Logo" class="w-10 h-10 object-contain"/>
+        </ToolCard>
+        <ToolCard name="Git">
+          <img src="/tools/git.png" alt="Git Logo" class="w-10 h-10 object-contain"/>
+        </ToolCard>
+        <ToolCard name="GitHub">
+          <img src="/tools/github.png" alt="GitHub Logo" class="w-10 h-10 object-contain"/>
+        </ToolCard>
+        <ToolCard name="Wordpress">
+          <img src="/tools/wordpress.png" alt="Wordpress Logo" class="w-10 h-10 object-contain"/>
+        </ToolCard>
+        <ToolCard name="Adobe Photoshop">
+          <img src="/tools/adobe-photoshop.png" alt="Adobe Photoshop Logo" class="w-10 h-10 object-contain"/>
+        </ToolCard>
+        <ToolCard name="Zebra">
+          <img src="/tools/zebra.png" alt="Zebra Logo" class="w-10 h-10 object-contain"/>
+        </ToolCard>
+        
+        {/* Honeywell dipertahankan sesuai permintaan */}
+        <ToolCard name="Honeywell">
+           <p class="text-xl font-bold text-[#D01622]">Honeywell</p>
+        </ToolCard>
+        
+        {/* NiceLabel sudah dihapus dari sini */}
+        
+      </div>
+    </div>
+
+    <div class="bg-primary p-8 rounded-lg" data-aos="fade-up" data-aos-delay="200">
+      <h3 class="text-2xl font-semibold mb-6 text-center">Main Skills</h3>
+      <SkillBar skill="Penetration Testing" percentage="85%" />
+      <SkillBar skill="System Administration" percentage="90%" />
+      <SkillBar skill="Network Topology & Security" percentage="80%" />
+      <SkillBar skill="Troubleshooting (Windows/Linux)" percentage="95%" />
+      <SkillBar skill="Python Programming" percentage="75%" />
+      <SkillBar skill="Basic Web Programming" percentage="70%" />
+    </div>
+  </div>
+</section>

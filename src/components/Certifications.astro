@@ -1,0 +1,60 @@
+---
+// File: src/components/Certifications.astro (Final dengan Link Imgur)
+import CertificationCard from './CertificationCard.astro';
+---
+<section id="certifications" class="py-20">
+  <div class="container mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-16" data-aos="fade-up">
+      Certifications & Transcripts
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8" data-aos="fade-up" data-aos-delay="200">
+      
+      <CertificationCard
+        title="NSE 1 Network Security Associate"
+        issuer="Fortinet"
+        date="Juni 2023"
+        imgSrc="https://i.imgur.com/ygRaqwP.png"
+      />
+      <CertificationCard
+        title="NSE 2 Network Security Associate"
+        issuer="Fortinet"
+        date="Juni 2023"
+        imgSrc="https://i.imgur.com/aOPF9M3.png"
+      />
+      <CertificationCard
+        title="NSE 3 Network Security Associate"
+        issuer="Fortinet"
+        date="Juni 2023"
+        imgSrc="https://i.imgur.com/FYpb5I2.png"
+      />
+       <CertificationCard
+        title="The Evolution of Cybersecurity"
+        issuer="Fortinet"
+        date="Juni 2023"
+        imgSrc="https://i.imgur.com/TQpuxvZ.png"
+      />
+      
+      <CertificationCard
+        title="OS Fundamentals Path"
+        issuer="HTB Academy"
+        date="Peringkat Top 5%"
+        imgSrc="https://i.imgur.com/tjsglP4.png"
+        pdfUrl="/transcripts/htb-transcript.pdf"
+      />
+
+      <CertificationCard
+        title="Technical Accreditation"
+        issuer="Honeywell"
+        date="Mobility, Scanning & Printing"
+        imgSrc="https://i.imgur.com/OIdmpsL.png"
+      />
+      <CertificationCard
+        title="Web Desain"
+        issuer="Sekolahmu"
+        date="Oktober 2021"
+        imgSrc="https://i.imgur.com/3bfHrk5.png"
+      />
+
+    </div>
+  </div>
+</section>

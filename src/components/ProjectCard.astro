@@ -1,0 +1,42 @@
+---
+// File: src/components/ProjectCard.astro
+interface Props {
+  title: string;
+  description: string;
+  imgSrc: string;
+  tech: string[];
+  githubUrl: string;
+}
+const { title, description, imgSrc, tech, githubUrl } = Astro.props;
+---
+<a 
+  href={githubUrl} 
+  target="_blank" 
+  rel="noopener noreferrer"
+  class="block rounded-lg overflow-hidden shadow-lg 
+         bg-gradient-to-br from-primary to-primary-dark 
+         hover:shadow-accent/20 hover:-translate-y-2 
+         transition-all duration-300 group"
+>
+  <!-- Bagian Gambar -->
+  <div class="overflow-hidden">
+    <img 
+      class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" 
+      src={imgSrc} 
+      alt={`Screenshot of ${title}`}
+    >
+  </div>
+
+  <!-- Bagian Konten Teks -->
+  <div class="p-6">
+    <h3 class="text-xl font-bold mb-2">{title}</h3>
+    <p class="text-text-secondary text-sm mb-4 h-24">{description}</p>
+    
+    <!-- Tech Stack Tags -->
+    <div class="flex flex-wrap gap-2">
+      {tech.map((item) => (
+        <span class="bg-gray-700 text-text-secondary text-xs font-semibold px-2.5 py-1 rounded-full">{item}</span>
+      ))}
+    </div>
+  </div>
+</a>

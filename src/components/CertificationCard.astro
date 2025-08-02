@@ -1,0 +1,36 @@
+---
+// File: src/components/CertificationCard.astro (Versi Final & Benar)
+interface Props {
+  title: string;
+  issuer: string;
+  date: string;
+  imgSrc: string;
+  pdfUrl?: string; // Properti opsional untuk link PDF
+}
+const { title, issuer, date, imgSrc, pdfUrl } = Astro.props;
+
+const Tag = pdfUrl ? 'a' : 'div'; // Jadi <a> jika ada link PDF, jika tidak maka <div>
+---
+
+<Tag 
+  href={pdfUrl ? pdfUrl : 'javascript:void(0);'}
+  target={pdfUrl ? '_blank' : undefined}
+  rel={pdfUrl ? 'noopener noreferrer' : undefined}
+  class:list={[
+    'block',
+    // Class di bawah ini hanya aktif jika TIDAK ada link PDF
+    { 'certificate-trigger cursor-pointer': !pdfUrl } 
+  ]}
+  data-full-img={!pdfUrl ? imgSrc : undefined}
+>
+  <div class="bg-primary rounded-lg p-6 text-center group hover:bg-gray-800 transition-colors duration-300 h-full flex flex-col">
+    <div class="flex-grow flex items-center justify-center mb-4">
+      <img src={imgSrc} alt={`Sertifikat untuk ${title}`} class="max-w-full max-h-36 object-contain rounded-md bg-white p-2 pointer-events-none">
+    </div>
+    <div class="mt-auto">
+      <h4 class="text-lg font-semibold text-white">{title}</h4>
+      <p class="text-accent">{issuer}</p>
+      <p class="text-sm text-text-secondary mt-1">{date}</p>
+    </div>
+  </div>
+</Tag>
