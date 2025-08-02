@@ -9,7 +9,7 @@
 <p align="center">
   <em>Website portofolio pribadi yang dibangun dengan Astro dan Tailwind CSS untuk menampilkan perjalanan profesional, keahlian, dan proyek-proyek saya di bidang IT dan Cyber Security.</em>
   <br/><br/>
-  <a href="https://GANTI-DENGAN-LINK-VERCEL-LU.vercel.app/" target="_blank"><strong>✨ Lihat Live Demo ✨</strong></a>
+  <a href="https://portfolio-wine-kappa-48.vercel.app/="_blank"><strong>✨ Lihat Live Demo ✨</strong></a>
 </p>
 
 ---
